@@ -1,0 +1,206 @@
+body {
+  padding:0;
+  margin:0;
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background: #fff;
+  text-align: center;
+  color: #2f2f2d;
+  /*text-shadow: 0px 1px 1px #4d4d4d;*/
+}
+a {
+  color: #2f2f2d;
+}
+
+svg{
+  margin:0;
+  padding:0;
+}
+#today{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left: 0;
+
+  width: 35%;
+  height: 100%;
+  
+  z-index: 10;
+
+  background: #d9e3d8;
+  /*background: #d1e5e4; blue*/
+  box-shadow: 25px 0px 15px -20px #2f2f2d;
+  border-right: 1px solid #2f2f2d;
+}
+.today{
+  width: 100%;
+  height: 100%;
+}
+
+#timeline{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:35%;
+
+  width: 65%;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  margin: 0;
+  padding: 0;
+
+  z-index: 0;
+  background: #484945; /*url("/images/noisy_net.png");*/
+  cursor: move;
+}
+
+.timeline{
+  float:left;
+}
+#hello{
+  float:left;
+}
+
+
+text{
+  fill: #2f2f2d;
+  shape-rendering: crispEdges;
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+
+
+
+/*TIMELINE*/
+.timeline path, .timeline circle, .timeline line{
+  stroke: #2f2f2d;
+  stroke-width: 1px;
+  fill: none;
+}
+
+.x-axis path{
+  stroke-width: 0;
+}
+
+/*LIGHT*/
+path.light{
+  fill: #3e3f3b;
+  /*shape-rendering: crispEdges;*/
+}
+
+/*WATER*/
+path.humid{
+  fill: #3e3f3b;
+  /*shape-rendering: crispEdges;*/
+}
+
+
+/*TODAY*/
+
+
+.today line{
+  stroke-dasharray: 7, 5;
+  stroke: #2f2f2d;
+  stroke-width: 1px;
+  fill: none;
+}
+
+/*DATE*/
+.datetext{
+  font-size: 30px;
+}
+.hourtext{
+  font-size: 26px;
+}
+
+/*SUN*/
+.suncircle{
+  stroke: #2f2f2d;
+  stroke-width: 0px;
+  fill: url(/dataviz/#sungradient) #ec5a35;
+  /*fill-opacity: 0.5;*/
+}
+.suntext{
+  font-size: 30px;
+}
+.suntextlabel{
+  font-size: 26px;
+}
+
+/*GROUND*/
+.ground{
+  stroke: #2f2f2d;
+  stroke-width: 0px;
+  fill:  url(/dataviz/#green) #2b382e;
+  /*opacity: 0.8;*/
+}
+.underground{
+  stroke: #2f2f2d;
+  stroke-width: 0px;
+  fill: url(/dataviz/#underground) #2b382e;
+  opacity: 0.8;
+}
+
+/*TEMP*/
+.tempbg{
+  stroke: #2f2f2d;
+  stroke-width: 0px;
+  fill: #fef9e7;
+  opacity: 0.9;
+}
+.tempcircle{
+  stroke: #2f2f2d;
+  stroke-width: 0px;
+  fill: url(/dataviz/#red) #c63832;
+}
+.temp{
+  stroke: #2f2f2d;
+  stroke-width: 0px;
+  fill: url(/dataviz/#red) #c63832;
+}
+.temptext{
+  font-size: 30px;
+}
+.temptextlabel{
+  font-size: 26px;
+}
+
+/*WATER*/
+.waterarea{
+  stroke: #2f2f2d;
+  stroke-width: 0px;
+  fill: url(/dataviz/#bg) #356a70;
+  opacity: 0.9;
+}
+.watertext{
+  font-size: 30px;
+  fill:#47524d;
+}
+.watertextlabel{
+  font-size: 26px;
+  fill:#47524d;
+}
+
+
+/*hello*/
+#hello > div{
+  padding: 50px 100px;
+  text-shadow: 0px 1px 1px #4d4d4d;
+}
+#hello img{
+  position: relative;
+  width: 80%;
+}
+#hello div{
+  position: relative;
+  width: 200px;
+}
+h1{
+  font-size: 30px;
+  line-height: 5px;
+}
